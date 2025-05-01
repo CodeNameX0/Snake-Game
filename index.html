@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <style>
+    canvas {
+      display: block;
+      margin: 20px auto;
+      background: #000;
+    }
+    #startButton {
+      display: block;
+      margin: 0 auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #startButton:hover {
+      background-color: darkgreen;
+    }
+    .controls {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    .control-button {
+      padding: 10px;
+      margin: 5px;
+      font-size: 16px;
+      background-color: blue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .control-button:hover {
+      background-color: darkblue;
+    }
+  </style>
+</head>
+<body>
+  <button id="startButton">Start Game</button>
+  <canvas id="gameCanvas" width="400" height="400" style="display: none;"></canvas>
+  <div class="controls" style="display: none;">
+    <button class="control-button" id="upButton">Up</button>
+  </div>
+  <div class="controls" style="display: none;">
+    <button class="control-button" id="leftButton">Left</button>
+    <button class="control-button" id="downButton">Down</button>
+    <button class="control-button" id="rightButton">Right</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
